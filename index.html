@@ -25,15 +25,17 @@
 <nav>
   <div class="nav-inner">
     <a href="#" class="logo">
-      CNT<span class="logo-o">O</span>
+      <span class="logo-name">CNTO</span>
+      <span class="logo-year">2026</span>
     </a>
     <div class="nav-links">
       <a href="#role">Notre rôle</a>
       <a href="#piliers">Piliers</a>
       <a href="#vision">Vision</a>
       <a href="#impact">Impact</a>
+      <a href="#contact">Contact</a>
     </div>
-    <a href="#role" class="nav-cta">Découvrir →</a>
+    <a href="#role" class="nav-cta">Découvrir</a>
     <button class="nav-burger" aria-label="Menu" onclick="document.querySelector('.nav-mobile').classList.toggle('open')">
       <span></span><span></span><span></span>
     </button>
@@ -43,56 +45,44 @@
     <a href="#piliers">Piliers</a>
     <a href="#vision">Vision</a>
     <a href="#impact">Impact</a>
-    <a href="#role" class="nav-cta">Découvrir →</a>
+    <a href="#contact">Contact</a>
+    <a href="#role" class="nav-cta">Découvrir</a>
   </div>
 </nav>
 
-<!-- ============ HERO ============ -->
+<!-- ============ HERO — Image pleine page, pas de texte ============ -->
 <section class="hero">
-  <!-- Full-bleed background image -->
   <picture class="hero-bg">
     <source media="(max-width: 720px)" srcset="cntomobile.png">
     <source media="(min-width: 721px)" srcset="cntohero.png">
     <img src="cntohero.png" alt="CNTO — Le centre qui relie parkings, clients et assistance" loading="eager" fetchpriority="high">
   </picture>
-
-  <!-- Dark gradient overlay -->
-  <div class="hero-overlay"></div>
-
-  <!-- Hero content -->
-  <div class="container hero-inner">
-    <div class="hero-content">
-      <div class="hero-eyebrow reveal">— Centre National de Téléopération</div>
-
-      <h1 class="hero-title reveal delay-1">
-        Le centre qui <em>relie</em><br>
-        parkings, clients<br>
-        et assistance.
-      </h1>
-
-      <p class="hero-lede reveal delay-2">
-        L'expertise humaine et technologique<br>
-        au service d'une mobilité <em>sans friction.</em>
-      </p>
-
-      <div class="hero-cta-row reveal delay-3">
-        <a href="#role" class="btn btn-primary">Découvrir le CNTO →</a>
-        <a href="#piliers" class="btn btn-ghost">Voir les piliers</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Bottom scroll indicator -->
-  <div class="hero-scroll reveal delay-4">
-    <span class="hero-scroll-line"></span>
-    <span class="hero-scroll-text">Découvrir</span>
-  </div>
+  <!-- Fondu noir en bas qui fusionne avec la section suivante -->
+  <div class="hero-fade"></div>
 </section>
 
-<!-- ============ HERO STATS (juste après le hero) ============ -->
-<section class="hero-stats-section">
+<!-- ============ HERO TEXT — sous l'image, sur fond sombre ============ -->
+<section class="hero-text-section">
   <div class="container">
-    <div class="hero-stats reveal">
+    <div class="hero-eyebrow reveal">— Centre National de Téléopération · Indigo</div>
+
+    <h1 class="hero-title reveal delay-1">
+      Le centre qui <em>relie</em><br>
+      parkings, clients<br>
+      et assistance.
+    </h1>
+
+    <p class="hero-lede reveal delay-2">
+      L'expertise humaine et technologique au service d'une mobilité <em>sans friction.</em> Quand un client appelle, ce n'est jamais <strong>« juste un appel »</strong>. C'est une barrière bloquée, une alarme, un doute, une urgence. Le CNTO est là pour répondre vite, comprendre juste, et remettre le mouvement en route.
+    </p>
+
+    <div class="hero-cta-row reveal delay-3">
+      <a href="#role" class="btn btn-primary">Découvrir le CNTO →</a>
+      <a href="#piliers" class="btn btn-ghost">Voir les piliers</a>
+    </div>
+
+    <!-- Stat row -->
+    <div class="hero-stats reveal delay-4">
       <div class="stat-cell">
         <div class="stat-num">24<span class="dim">/</span>7</div>
         <div class="stat-lbl">Présence<br>continue</div>
@@ -110,9 +100,6 @@
         <div class="stat-lbl">Situations<br>traitées</div>
       </div>
     </div>
-    <p class="hero-callout reveal delay-1">
-      Quand un client appelle, ce n'est jamais <em>« juste un appel »</em>. C'est une barrière bloquée, une alarme, un doute, une urgence. <strong>Le CNTO est là pour répondre vite, comprendre juste, et remettre le mouvement en route.</strong>
-    </p>
   </div>
 </section>
 
