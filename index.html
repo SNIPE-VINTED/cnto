@@ -50,38 +50,31 @@
 <!-- ============ HERO ============ -->
 <section class="hero">
   <div class="container">
-    <div class="hero-grid">
-      <!-- LEFT: Text content -->
-      <div class="hero-content">
-        <div class="hero-eyebrow reveal">— Centre National de Téléopération</div>
 
-        <h1 class="hero-title reveal delay-1">
-          Le centre qui <em>relie</em><br>
-          parkings, clients<br>
-          et assistance.
-        </h1>
+    <!-- HERO IMAGE — first, full width -->
+    <div class="hero-image reveal">
+      <picture>
+        <source media="(max-width: 720px)" srcset="cntomobile.png">
+        <source media="(min-width: 721px)" srcset="cntohero.png">
+        <img src="cntohero.png" alt="CNTO — Le centre qui relie parkings, clients et assistance" loading="eager" fetchpriority="high">
+      </picture>
+    </div>
 
-        <p class="hero-lede reveal delay-2">
-          L'expertise humaine et technologique au service d'une mobilité sans friction.
-        </p>
+    <!-- HERO TEXT — centered below -->
+    <div class="hero-content">
+      <div class="hero-eyebrow reveal delay-1">Centre National de Téléopération</div>
 
-        <p class="hero-callout reveal delay-3">
-          Quand un client appelle, ce n'est jamais <em>« juste un appel »</em>. C'est une barrière bloquée, une alarme, un doute, une urgence. <strong>Le CNTO est là pour répondre vite, comprendre juste, et remettre le mouvement en route.</strong>
-        </p>
+      <h1 class="hero-title reveal delay-2">
+        Le centre qui <em>relie</em> parkings, clients et assistance.
+      </h1>
 
-        <div class="hero-cta-row reveal delay-4">
-          <a href="#role" class="btn btn-primary">Découvrir le CNTO →</a>
-          <a href="#piliers" class="btn btn-ghost">Voir les piliers</a>
-        </div>
-      </div>
+      <p class="hero-lede reveal delay-3">
+        L'expertise humaine et technologique au service d'une mobilité sans friction. <strong>Quand un client appelle, ce n'est jamais juste un appel.</strong> C'est une barrière bloquée, une alarme, un doute, une urgence. Le CNTO est là pour répondre vite, comprendre juste, et remettre le mouvement en route.
+      </p>
 
-      <!-- RIGHT: Hero image -->
-      <div class="hero-visual reveal delay-2">
-        <picture>
-          <source media="(max-width: 720px)" srcset="cntomobile.png">
-          <source media="(min-width: 721px)" srcset="cntohero.png">
-          <img src="cntohero.png" alt="CNTO — Le centre qui relie parkings, clients et assistance" loading="eager" fetchpriority="high">
-        </picture>
+      <div class="hero-cta-row reveal delay-4">
+        <a href="#role" class="btn btn-primary">Découvrir le CNTO →</a>
+        <a href="#piliers" class="btn btn-ghost">Voir les piliers</a>
       </div>
     </div>
 
