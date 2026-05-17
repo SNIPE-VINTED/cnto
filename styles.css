@@ -402,36 +402,19 @@ nav.scrolled {
   .hero-bg img { object-position: center top; }
 }
 
-/* Fondu noir + BLUR en bas qui fusionne avec section suivante
-   On ne coupe PAS l'image, on ajoute un voile dégradé */
+/* Fondu noir TRÈS LÉGER en bas — on voit toute l'image */
 .hero-fade {
   position: absolute;
   left: 0; right: 0;
   bottom: 0;
-  height: 35%;
+  height: 20%;
   z-index: 2;
   pointer-events: none;
   background: linear-gradient(180deg,
     transparent 0%,
-    rgba(10, 14, 31, 0.0) 10%,
-    rgba(10, 14, 31, 0.25) 35%,
-    rgba(10, 14, 31, 0.65) 60%,
-    rgba(10, 14, 31, 0.92) 85%,
-    rgba(10, 14, 31, 1) 100%);
-  backdrop-filter: blur(0px);
-}
-
-/* Blur progressif sur la bande basse (zone du fondu) */
-.hero-fade::before {
-  content: '';
-  position: absolute;
-  left: 0; right: 0;
-  bottom: 0;
-  height: 60%;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  mask-image: linear-gradient(180deg, transparent 0%, black 70%, black 100%);
-  -webkit-mask-image: linear-gradient(180deg, transparent 0%, black 70%, black 100%);
+    rgba(10, 14, 31, 0.0) 40%,
+    rgba(10, 14, 31, 0.4) 80%,
+    rgba(10, 14, 31, 0.95) 100%);
 }
 
 /* Léger fondu en HAUT aussi pour que la nav se fonde */
