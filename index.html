@@ -5,17 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>CNTO — Le centre qui relie parkings, clients et assistance</title>
 <meta name="description" content="Centre National de Téléopération. L'expertise humaine et technologique au service d'une mobilité sans friction. 24h/24, 7j/7.">
-<meta name="theme-color" content="#F4EFE5">
+<meta name="theme-color" content="#0A0E1F">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="CNTO — Le centre qui relie parkings, clients et assistance">
 <meta property="og:description" content="L'expertise humaine et technologique au service d'une mobilité sans friction.">
+<meta property="og:image" content="cntohero.png">
 <meta property="og:locale" content="fr_FR">
 
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -23,14 +24,16 @@
 <!-- ============ NAV ============ -->
 <nav>
   <div class="nav-inner">
-    <a href="#" class="logo">CNTO <span class="logo-year">2026</span></a>
+    <a href="#" class="logo">
+      CNT<span class="logo-o">O</span>
+    </a>
     <div class="nav-links">
       <a href="#role">Notre rôle</a>
       <a href="#piliers">Piliers</a>
       <a href="#vision">Vision</a>
       <a href="#impact">Impact</a>
     </div>
-    <a href="#contact" class="nav-cta">Découvrir →</a>
+    <a href="#role" class="nav-cta">Découvrir →</a>
     <button class="nav-burger" aria-label="Menu" onclick="document.querySelector('.nav-mobile').classList.toggle('open')">
       <span></span><span></span><span></span>
     </button>
@@ -40,18 +43,17 @@
     <a href="#piliers">Piliers</a>
     <a href="#vision">Vision</a>
     <a href="#impact">Impact</a>
-    <a href="#contact" class="nav-cta">Découvrir →</a>
+    <a href="#role" class="nav-cta">Découvrir →</a>
   </div>
 </nav>
 
 <!-- ============ HERO ============ -->
 <section class="hero">
   <div class="container">
-
     <div class="hero-grid">
       <!-- LEFT: Text content -->
       <div class="hero-content">
-        <div class="hero-eyebrow reveal">— Centre National de Téléopération · Indigo</div>
+        <div class="hero-eyebrow reveal">— Centre National de Téléopération</div>
 
         <h1 class="hero-title reveal delay-1">
           Le centre qui <em>relie</em><br>
@@ -60,21 +62,25 @@
         </h1>
 
         <p class="hero-lede reveal delay-2">
-          L'expertise humaine et technologique au service d'une mobilité sans friction. Quand un client appelle, ce n'est jamais <em>« juste un appel »</em>. C'est une barrière bloquée, une alarme, un doute, une urgence. <strong>Le CNTO est là pour répondre vite, comprendre juste, et remettre le mouvement en route.</strong>
+          L'expertise humaine et technologique au service d'une mobilité sans friction.
         </p>
 
-        <div class="hero-cta-row reveal delay-3">
+        <p class="hero-callout reveal delay-3">
+          Quand un client appelle, ce n'est jamais <em>« juste un appel »</em>. C'est une barrière bloquée, une alarme, un doute, une urgence. <strong>Le CNTO est là pour répondre vite, comprendre juste, et remettre le mouvement en route.</strong>
+        </p>
+
+        <div class="hero-cta-row reveal delay-4">
           <a href="#role" class="btn btn-primary">Découvrir le CNTO →</a>
           <a href="#piliers" class="btn btn-ghost">Voir les piliers</a>
         </div>
       </div>
 
-      <!-- RIGHT: Hero image — responsive via picture -->
+      <!-- RIGHT: Hero image -->
       <div class="hero-visual reveal delay-2">
         <picture>
-          <source media="(max-width: 720px)" srcset="hero-mobile.png">
-          <source media="(min-width: 721px)" srcset="hero.png">
-          <img src="hero.png" alt="CNTO — Le centre qui relie parkings, clients et assistance" loading="eager" fetchpriority="high">
+          <source media="(max-width: 720px)" srcset="cntomobile.png">
+          <source media="(min-width: 721px)" srcset="cntohero.png">
+          <img src="cntohero.png" alt="CNTO — Le centre qui relie parkings, clients et assistance" loading="eager" fetchpriority="high">
         </picture>
       </div>
     </div>
@@ -82,7 +88,7 @@
     <!-- Stat row -->
     <div class="hero-stats reveal delay-4">
       <div class="stat-cell">
-        <div class="stat-num">24/7</div>
+        <div class="stat-num">24<span class="dim">/</span>7</div>
         <div class="stat-lbl">Présence<br>continue</div>
       </div>
       <div class="stat-cell">
@@ -104,7 +110,7 @@
 <!-- ============ SECTION 01 — RÔLE ============ -->
 <section id="role" class="section">
   <div class="container">
-    <div class="section-eyebrow reveal">Notre rôle</div>
+    <div class="section-eyebrow reveal">01 · Notre rôle</div>
     <h2 class="section-title reveal delay-1">
       Derrière chaque parking,<br>il y a une <em>voix.</em>
     </h2>
@@ -122,7 +128,7 @@
 <!-- ============ SECTION 02 — CE QU'ON FAIT ============ -->
 <section class="section section-tint">
   <div class="container">
-    <div class="section-eyebrow reveal">Ce qu'on fait</div>
+    <div class="section-eyebrow reveal">02 · Ce qu'on fait</div>
     <h2 class="section-title reveal delay-1">
       Une assistance pensée<br>pour le <em>réel.</em>
     </h2>
@@ -135,7 +141,7 @@
 <!-- ============ SECTION 03 — PILIERS ============ -->
 <section id="piliers" class="section">
   <div class="container">
-    <div class="section-eyebrow reveal">Les piliers</div>
+    <div class="section-eyebrow reveal">03 · Les piliers</div>
     <h2 class="section-title reveal delay-1">
       Quatre fondations.<br>Une seule <em>exigence.</em>
     </h2>
@@ -171,7 +177,7 @@
 <!-- ============ SECTION 04 — VISION ============ -->
 <section id="vision" class="section section-tint">
   <div class="container">
-    <div class="section-eyebrow reveal">Vision</div>
+    <div class="section-eyebrow reveal">04 · Vision</div>
     <h2 class="section-title reveal delay-1">
       Le parking de demain aura besoin<br>d'un <em>centre intelligent.</em>
     </h2>
@@ -189,7 +195,7 @@
 <!-- ============ SECTION 05 — IMPACT ============ -->
 <section id="impact" class="section">
   <div class="container">
-    <div class="section-eyebrow reveal">Impact</div>
+    <div class="section-eyebrow reveal">05 · Impact</div>
     <h2 class="section-title reveal delay-1">
       Chaque jour, des milliers<br>de situations <em>traitées.</em>
     </h2>
@@ -202,7 +208,7 @@
 <!-- ============ SECTION 06 — PHRASE FORTE ============ -->
 <section class="section section-pullquote">
   <div class="container">
-    <div class="section-eyebrow reveal">La vraie différence</div>
+    <div class="section-eyebrow reveal">06 · La vraie différence</div>
     <h2 class="pullquote reveal delay-1">
       On ne gère pas seulement des appels.<br>
       <em>On protège l'expérience client.</em>
@@ -214,9 +220,9 @@
 </section>
 
 <!-- ============ SECTION 07 — PREMIUM ============ -->
-<section id="contact" class="section section-tint">
+<section class="section section-tint">
   <div class="container">
-    <div class="section-eyebrow reveal">L'assistance invisible</div>
+    <div class="section-eyebrow reveal">07 · L'assistance invisible</div>
     <h2 class="section-title reveal delay-1">
       CNTO, l'assistance invisible qui fait<br><em>tenir</em> toute l'expérience.
     </h2>
@@ -243,7 +249,7 @@
 
     <div class="footer-grid">
       <div>
-        <div class="footer-brand">CNTO</div>
+        <div class="footer-brand">CNT<span class="logo-o">O</span></div>
         <p class="footer-text">Centre National de Téléopération. L'assistance parking 24h/24, 7j/7.</p>
       </div>
       <div>
@@ -261,7 +267,7 @@
 
     <div class="footer-meta">
       <span>© 2026 CNTO · Tous droits réservés</span>
-      <span>Centre National de Téléopération</span>
+      <span>cnto.fr</span>
     </div>
   </div>
 </footer>
